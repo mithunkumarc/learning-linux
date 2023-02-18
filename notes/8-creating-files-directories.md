@@ -1,4 +1,4 @@
-creating files
+creating files : in some directory you are not allowed to create file becuase or restriction/permission(depends on type of user)
 
     touch : creates empty file
       
