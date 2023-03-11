@@ -1,0 +1,63 @@
+IO redirection
+Everything is a file in linux
+
+process file descriptor table
+
+file descriptors(reserved)
+0 -> std in
+1 -> std out 
+2 -> std err
+
+from 3 onwards : user creadted files
+
+stdin : keyboard
+stdout : monitor
+std in -> process -> std out
+	                -> std err
+			
+max files can be opened : open_max - 1
+
+cmd>getconf OPEN_MAX
+
+redirection means 
+instead of reading from stdin(file 0) 
+reading from other file (location)
+
+instead of writing to stdout(2)
+if you write to another file 
+
+> wc command used to redirection
+
+writing to file istead of stdout
+wc > filename
+filename points to stdout(1)
+
+cp f1 f2 
+cat < f1 > f2
+
+error redirection
+
+/dev/null : black hole? why?
+
+symbol for redirection
+2> error
+1> ouput
+0< input
+
+0 and 1 are optional
+for error 2 is mandatory
+
+
+
+cat 0<f1 1>op 2>err
+if f1 exist 
+stdin 0 - f1 
+stdout 1 - op 
+stderr 2 - err 
+
+if f1 doesn't exist
+err generated
+err goto err file 
+
+copy descriptor
+>> means append
