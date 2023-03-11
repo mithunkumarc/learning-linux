@@ -1,0 +1,35 @@
+signal handling : IPC 
+
+eg: process did something(exception/error)
+	generate signals 
+	
+	SIGFPE(8) floating point error 
+	
+SIGNALs are given to process 
+
+A process wants to do another process something
+
+eg : ctrl+c sigint(2)
+
+show all signals list
+>kill -l
+>man 7 signal 
+
+
+catchable and non catchable
+
+sigkill : no process can catch and
+sigstop 
+
+>kill pid
+>killall <processname>
+
+
+>kill %jobid
+
+
+trap command?
+customize signal/message?
+or behavior?
+user defined handler(signal)?
+
