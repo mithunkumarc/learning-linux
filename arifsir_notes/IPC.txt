@@ -1,0 +1,104 @@
+Inter process communication
+techniques to share data
+
+p1 read from file 1
+p2 write to file 2
+
+costly 
+
+p1 
+p2 both work on buffer
+
+p1 
+p2 both have shared memory
+with permission
+
+IPC
+1. signals
+3. communication
+4. synchronization
+
+Communication
+	Data transfer
+		Bytestream
+			pipes
+			named pipes 
+			stream buckets
+		Message passing
+			systemv 
+			posx 
+			datagram sockets 
+	shared memory 
+		systemv api 
+		posix api
+		memory mapping
+			anonymous
+			mem mappingFileIO 
+
+pipes : used between
+related processes
+sibling or parent - child
+executing on same machine
+
+cmd1 | cmd2 
+cmd1 -1--pipe--0- cmd2
+1 : output
+0 : input
+
+example : to see ls /etc output in another file temp.txt without pipe 
+
+>ls /etc
+
+>ls /etc/ 1>temp.txt
+
+>less temp.txt
+
+
+example : with pipe
+
+>ls /etc/ | less 
+
+
+
+count numberOF lines in man ls
+
+>man ls | wc -l 
+
+
+how many times string "ls" in man ls
+
+
+>man ls | grep ls | wc -l
+
+longlist ing of currntwork dir
+>ls -lt 
+
+> ls -lt | head 5
+
+current working dir files  
+> find . -type f | wc -l 
+
+
+f : regular file 
+d: dir
+
+
+>ls -l ~
+
+>ls -l ~ | grep Oct
+file created in oct
+
+read write stdin stdout
+>tee 
+
+read stdin to f1,f2,f3
+>tee f1 f2 f3 
+
+> tee 0< f1
+
+ps command?
+
+>mkfifo pipename
+
+named pipes with name 
+unrelated process can communicate with named pipe 
