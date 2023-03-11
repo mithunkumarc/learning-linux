@@ -1,0 +1,108 @@
+Process Scheduling
+scheduler : 
+preemtive scheduler:Time slice
+cooperative scheduler:
+
+classification of processes
+(related to scheduler)
+1.interactive process 
+	eg: bash
+2.Batch process
+	eg: background process 
+		compilers
+3.RealTime process:
+	Hard : 
+	Soft : 
+4.CPU usage
+	CPU bound: computation
+	IO bound: IO operations
+	
+	
+Standard scheduler Algo
+FCFS
+SJF
+SRTF
+Priority based
+Highest REsponse Ratio next
+Round robin(penalize IO bound)
+virutal RR
+Multilevel queue schedulers
+Multi level Feed back queue scheduler
+Rotating Staircase deadline scheduler
+
+
+UNIX SVR3 Scheduler
+totla 128 queue
+kernel queue : 0-49
+user queue : 50-127
+
+0 - highest priority
+...
+
+
+nice priority?
+giving oppurtunity to run?
+renice?
+
+
+>watch free
+// free memory
+
+>ps -a
+>ps -al
+> renice 7 <pid>
+>ps -al
+
+> sudo renice -20 <pid>
+>ps -al 
+
+>man schedtool
+>sudo apt-get install schedtool 
+
+>query and set per process scheduling parameters
+
+scheduling policy 
+1. real time
+2. conventional
+
+1. Real time 
+sched_RR
+sched_FIFO
+
+conventional
+	sched_normal
+	sched_batch :cpu intensive
+	schecd_ISO : unused
+	SCHED_IDLEPRIO : low prio
+
+
+
+sched tool : 
+scheduling policy 
+Nice value
+static pririoty
+CPU affinity
+
+CPU affinity of a process : 
+os kernel -> p1 , p2 
+cpu0 -> p1 
+cpu1 -> p2
+when p1 swicth to cpu1 
+invalidate cache in cpu0 
+
+Linux kernal : 
+soft cpu affinity
+	try to run p1 on cpu0 
+	but no guarentee
+hard cpu 
+	guarenteed
+
+hard cpu use
+cpus_allowed: 32 bits
+(enabling specific bits)
+
+cpus tells where process should run(on which cpu)
+
+>schedtool -r
+>man schedtool 
+// you can change nice value and prio using schedtool
