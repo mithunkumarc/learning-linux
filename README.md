@@ -9,3 +9,7 @@ delete jdk : sudo apt purge jdk-x.x
 ####  ubuntu tip :To remove any unused files and free up the disk space
 
     sudo apt-get autoremove
+
+#### give permission to project for editing/modifying 
+
+    sudo chmod -R 777 <folder/project_name>
