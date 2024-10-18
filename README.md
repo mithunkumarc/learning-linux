@@ -13,3 +13,7 @@ delete jdk : sudo apt purge jdk-x.x
 #### give permission to project for editing/modifying 
 
     sudo chmod -R 777 <folder/project_name>
+
+#### ubuntu screen resolution
+
+    https://igor.technology/solving-ubuntu-2004lts-external-monitor-resolution-problems/
