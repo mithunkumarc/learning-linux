@@ -25,3 +25,7 @@ delete jdk : sudo apt purge jdk-x.x
 
     https://lwn.net/Kernel/LDD3/
 
+#### kernel
+
+    https://www.youtube.com/watch?v=iSiyDHobXHA
+
