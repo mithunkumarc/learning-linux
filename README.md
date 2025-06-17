@@ -1,3 +1,5 @@
+
+
 # learning-linux
 
 debian apt command : https://www.youtube.com/watch?v=1kicKTbK768
@@ -17,3 +19,9 @@ delete jdk : sudo apt purge jdk-x.x
 #### ubuntu screen resolution
 
     https://igor.technology/solving-ubuntu-2004lts-external-monitor-resolution-problems/
+
+
+#### device drivers book
+
+    https://lwn.net/Kernel/LDD3/
+
