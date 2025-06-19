@@ -21,9 +21,10 @@ delete jdk : sudo apt purge jdk-x.x
     https://igor.technology/solving-ubuntu-2004lts-external-monitor-resolution-problems/
 
 
-#### device drivers book
+#### links
 
-    https://lwn.net/Kernel/LDD3/
+    https://lwn.net/Kernel/LDD3/ device drivers
+    https://csapp.cs.cmu.edu/3e/students.html resources for linux
 
 #### kernel
 
