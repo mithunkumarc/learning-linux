@@ -38,6 +38,7 @@ delete jdk : sudo apt purge jdk-x.x
     https://www.youtube.com/@IndronilBanerjee
     https://www.youtube.com/@embeddedarmdev
     https://www.youtube.com/@linuxhint
+    https://www.youtube.com/@briantwill
 
 #### vidoes
 
