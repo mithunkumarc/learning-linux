@@ -46,3 +46,7 @@ delete jdk : sudo apt purge jdk-x.x
     https://www.youtube.com/playlist?list=PLIz6U0slZNq2TS1zSUjZHgxBjAJL4nb92
     https://www.youtube.com/watch?v=bHeVE93lkzQ
     https://www.youtube.com/watch?v=iSiyDHobXHA device drivers
+
+#### github
+
+    https://github.com/PacktPublishing/Hands-on-System-Programming-with-Linux
