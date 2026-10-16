@@ -51,3 +51,7 @@ delete jdk : sudo apt purge jdk-x.x
 
     https://github.com/PacktPublishing/Hands-on-System-Programming-with-Linux
     https://github.com/PacktPublishing/Hands-On-System-Programming-with-Go
+
+#### course 
+
+    https://www.coursera.org/specializations/advanced-unix-system-programming-performance
