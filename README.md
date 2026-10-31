@@ -27,6 +27,7 @@ delete jdk : sudo apt purge jdk-x.x
     https://csapp.cs.cmu.edu/3e/students.html resources for linux
     https://bootlin.com/training/
     https://tildesites.bowdoin.edu/~sbarker/teaching/courses/os/26spring/schedule.php
+    https://diveintosystems.org/singlepage/
 
 #### kernel
 
