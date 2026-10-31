@@ -25,6 +25,7 @@ delete jdk : sudo apt purge jdk-x.x
 
     https://lwn.net/Kernel/LDD3/ device drivers
     https://csapp.cs.cmu.edu/3e/students.html resources for linux
+    https://bootlin.com/training/
 
 #### kernel
 
