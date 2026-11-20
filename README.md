@@ -58,3 +58,7 @@ delete jdk : sudo apt purge jdk-x.x
 #### course 
 
     https://www.coursera.org/specializations/advanced-unix-system-programming-performance
+
+#### device driver skillset
+
+    -
